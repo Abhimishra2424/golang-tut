@@ -4,9 +4,10 @@ import "fmt"
 
 func main() {
 
-	var amts [3]int = [3]int{10, 20, 30}
-	a := amts
-	fmt.Printf("Amouts: %v\n", amts)
-	fmt.Printf("A: %v\n", a)
+	a := [...]int{1, 2, 3, 4, 5, 6, 7, 8}
+	b := a[:]
+
+	fmt.Printf("B: %v\n", a)
+	fmt.Printf("A: %v\n", b)
 
 }
