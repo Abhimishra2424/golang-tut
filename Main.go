@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var i complex128 = 1 + 2i
-	fmt.Printf("%v %T", i, i)
-
+	s := "this is string"
+	s1 := "this is string"
+	fmt.Printf("%v %T", s+s1, s+s1)
 }
