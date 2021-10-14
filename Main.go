@@ -10,18 +10,8 @@ func main() {
 		"keyboard": 100,
 		"mouse":    50,
 	}
-	shopingCard["keyboard"] = 200
-	shopingCard["Monitor"] = 600
-	_, ok := shopingCard["phone"]
-	_, hai := shopingCard["mouse"]
 
-	sc := shopingCard
-
+	delete(shopingCard, "mouse")
 	fmt.Println(shopingCard)
-	fmt.Println(ok)
-	fmt.Println(hai)
-	fmt.Println(sc)
-	sc["Monitor"] = 800
-	fmt.Println(hai)
-	fmt.Println(sc)
+
 }
