@@ -21,4 +21,7 @@ func main() {
 	fmt.Println(ok)
 	fmt.Println(hai)
 	fmt.Println(sc)
+	sc["Monitor"] = 800
+	fmt.Println(hai)
+	fmt.Println(sc)
 }
