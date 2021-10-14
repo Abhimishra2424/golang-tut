@@ -20,6 +20,7 @@ func main() {
 			"go",
 		},
 	}
+	Student1.rollNo = 55
 	fmt.Println(Student1)
 
 }
