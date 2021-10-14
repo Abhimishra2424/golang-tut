@@ -1,14 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
-	var identityMatrix [3][3]int = [3][3]int{
-		{1, 0, 0},
-		{0, 1, 1},
-		{0, 0, 1},
+	// shopingCard := make(map[strings]int)
+
+	shopingCard := map[string]int{
+		"keyboard": 100,
+		"mouse":    50,
 	}
-	identityMatrix[1][2] = 7
-	fmt.Println(identityMatrix)
+	fmt.Println(shopingCard)
 }
