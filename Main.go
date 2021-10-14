@@ -12,9 +12,9 @@ type Student struct {
 func main() {
 
 	Student1 := Student{
-		name:   "abhi",
-		rollNo: 24,
-		subjects: []string{
+		"abhi",
+		24,
+		[]string{
 			"React",
 			"Next",
 			"go",
