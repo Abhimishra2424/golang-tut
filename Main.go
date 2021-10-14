@@ -8,5 +8,6 @@ func main() {
 	amt := [3]int{30, 40, 40}
 	fmt.Printf("amounts:%v", amts)
 	fmt.Printf("amounts:%v", amt)
+	fmt.Printf("%v\n", len(amt))
 
 }
