@@ -1,16 +1,12 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
-
-	var i = 12
-	var j float32 = float32(i)
-	var foo string = strconv.Itoa(i)
-	fmt.Printf("%v, %T\n", i, i)
-	fmt.Printf("%v, %T\n", j, j)
-	fmt.Printf("%v, %T\n", foo, foo)
+	i := 20
+	j := 3
+	fmt.Println(i + j)
+	fmt.Println(i - j)
+	fmt.Println(i * j)
+	fmt.Println(i / j)
 }
