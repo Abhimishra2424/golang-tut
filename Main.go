@@ -1,17 +1,25 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+//Student Struct
+type Student struct {
+	name     string
+	rollNo   int
+	subjects []string
+}
 
 func main() {
 
-	shopingCard := map[string]int{
-		"keyboard": 100,
-		"mouse":    50,
+	Student1 := Student{
+		name:   "abhi",
+		rollNo: 24,
+		subjects: []string{
+			"React",
+			"Next",
+			"go",
+		},
 	}
-
-	delete(shopingCard, "mouse")
-	fmt.Println(shopingCard)
+	fmt.Println(Student1)
 
 }
