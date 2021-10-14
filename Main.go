@@ -15,7 +15,10 @@ func main() {
 	_, ok := shopingCard["phone"]
 	_, hai := shopingCard["mouse"]
 
+	sc := shopingCard
+
 	fmt.Println(shopingCard)
 	fmt.Println(ok)
 	fmt.Println(hai)
+	fmt.Println(sc)
 }
