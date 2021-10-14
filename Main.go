@@ -2,25 +2,31 @@ package main
 
 import "fmt"
 
-//Student Struct
-type Student struct {
-	name     string
-	rollNo   int
-	subjects []string
+type Processor struct {
+	processorName string
+	cores         int
+}
+
+type Memory struct {
+	memoryCapacity int
+	memoryName     string
+}
+
+type Computer struct {
+	Processor
+	Memory
+	price int
 }
 
 func main() {
 
-	Student1 := Student{
-		"abhi",
-		24,
-		[]string{
-			"React",
-			"Next",
-			"go",
-		},
-	}
-	Student1.rollNo = 55
-	fmt.Println(Student1)
+	c := Computer{}
+	c.price = 5000
+	c.processorName = "intel i5"
+	c.cores = 5
+	c.memoryCapacity = 8
+	c.memoryName = "DDR4"
+
+	fmt.Println(c)
 
 }
