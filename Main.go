@@ -27,6 +27,18 @@ func main() {
 	c.memoryCapacity = 8
 	c.memoryName = "DDR4"
 
+	c1 := Computer{
+		Processor: Processor{
+			processorName: "intel i 5",
+			cores:         8,
+		},
+		Memory: Memory{
+			memoryCapacity: 15,
+			memoryName:     "DD3",
+		},
+	}
+
 	fmt.Println(c)
+	fmt.Println(c1)
 
 }
