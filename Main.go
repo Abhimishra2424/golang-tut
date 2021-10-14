@@ -9,5 +9,6 @@ func main() {
 		{0, 1, 1},
 		{0, 0, 1},
 	}
+	identityMatrix[1][2] = 7
 	fmt.Println(identityMatrix)
 }
