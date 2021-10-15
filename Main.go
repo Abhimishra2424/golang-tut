@@ -1,7 +1,8 @@
 package main
 
 import (
-	"fmt"
+
+	"os"
 )
 
 func main() {
@@ -73,9 +74,40 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 
-	for i := 0; i < 5; i++ {
-		for j := 0; j < 5; j++ {
-			fmt.Println(i * j)
-		}
+	// for i := 0; i < 5; i++ {
+	// 	for j := 0; j < 5; j++ {
+	// 		fmt.Println(i * j)
+	// 	}
+	// }
+
+	//////////////////////// *****  Defer panic and recover   ***** ///////////////////////////
+
+	// defer fmt.Println(1)
+	// defer fmt.Println(2)
+	// defer fmt.Println(3)
+	// defer fmt.Println(4)
+
+	// output 4,3,2,1
+
+	// panic
+
+	//   fmt.Println("start")
+	//   panic("this is a panic")
+	//   fmt.Println("end")
+
+	// output ........>
+	//   start
+	//   panic: this is a panic
+
+	//   goroutine 1 [running]:
+	//   main.main()
+	// 		  C:/repos/src/github.com/abhishek/App/main.go:97 +0xa5
+	//   exit status 2
+
+	panic("a pro")
+	_, err := os.Create("newFile.txt")
+	if err != nil {
+		panic(err)
 	}
+
 }
