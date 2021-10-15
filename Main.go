@@ -33,7 +33,7 @@ func main() {
 	// 	fmt.Println("this is simple else block")
 	// }
 
-	// And operator dono ko check karega 
+	// And operator dono ko check karega
 	// i := 10
 	// j := 10
 	// if i > 0 && j > 0 {
@@ -46,5 +46,14 @@ func main() {
 	// if i > 0 || j > 0 {
 	// 	fmt.Println("i and j greater than 0")
 	// }
+
+	switch 2 {
+	case 1:
+		fmt.Println("this is 1")
+	case 2:
+		fmt.Println("this is 2")
+	default:
+		fmt.Println("this is Default")
+	}
 
 }
