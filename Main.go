@@ -5,23 +5,17 @@ import (
 )
 
 func main() {
-	// msg := "hello here"
-	// wirteMessage(msg)
-	// fmt.Println(msg)
-	value := divide(3, 2)
-	fmt.Print(value)
-
-	fun := func() {
-		fmt.Println("this is anonymons function")
+	rect := rectangle{
+		width: 20, height: 10,
 	}
-	fun()
-
+	area := rect.area()
+	fmt.Println("area of rectangle:", area)
 }
 
-// func wirteMessage(msg string) {
-// 	fmt.Println(msg)
-// }
+type rectangle struct {
+	width, height int
+}
 
-func divide(a float64, b float64) float64 {
-	return a / b
+func (r rectangle) area() int {
+	return r.width * r.height
 }
