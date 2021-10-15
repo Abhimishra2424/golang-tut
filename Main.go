@@ -47,11 +47,22 @@ func main() {
 	// 	fmt.Println("i and j greater than 0")
 	// }
 
-	switch 2 {
-	case 1:
-		fmt.Println("this is 1")
-	case 2:
-		fmt.Println("this is 2")
+	// based on tag and expresion
+	// switch 1 {
+	// case 1, 3, 5, 7, 9:
+	// 	fmt.Println("this is odd")
+	// case 2, 4, 6, 8:
+	// 	fmt.Println("this is even")
+	// default:
+	// 	fmt.Println("this is Default")
+	// }
+
+	i := 2 + 3
+	switch {
+	case i > 0:
+		fmt.Println("this is odd")
+	case i < 5:
+		fmt.Println("this is even")
 	default:
 		fmt.Println("this is Default")
 	}
