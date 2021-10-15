@@ -1,8 +1,7 @@
 package main
 
 import (
-
-	"os"
+	"fmt"
 )
 
 func main() {
@@ -104,10 +103,16 @@ func main() {
 	// 		  C:/repos/src/github.com/abhishek/App/main.go:97 +0xa5
 	//   exit status 2
 
-	panic("a pro")
-	_, err := os.Create("newFile.txt")
-	if err != nil {
-		panic(err)
-	}
+	// panic("a pro")
+	// _, err := os.Create("newFile.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
+	// //// Pointers in GO
+
+	var a int = 12
+	var b *int = &a
+	fmt.Println(a)
+	fmt.Println(*b)
 }
