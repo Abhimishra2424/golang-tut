@@ -10,6 +10,12 @@ func main() {
 	// fmt.Println(msg)
 	value := divide(3, 2)
 	fmt.Print(value)
+
+	fun := func() {
+		fmt.Println("this is anonymons function")
+	}
+	fun()
+
 }
 
 // func wirteMessage(msg string) {
