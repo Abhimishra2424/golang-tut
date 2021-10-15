@@ -57,14 +57,19 @@ func main() {
 	// 	fmt.Println("this is Default")
 	// }
 
-	i := 2 + 3
-	switch {
-	case i > 0:
-		fmt.Println("this is odd")
-	case i < 5:
-		fmt.Println("this is even")
-	default:
-		fmt.Println("this is Default")
-	}
+	// i := 2 + 3
+	// switch {
+	// case i > 0:
+	// 	fmt.Println("this is odd")
+	// case i < 5:
+	// 	fmt.Println("this is even")
+	// default:
+	// 	fmt.Println("this is Default")
+	// }
 
+	// only one loop for loop in go lang
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
 }
