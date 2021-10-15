@@ -24,6 +24,8 @@ func main() {
 
 	if i := 2; i == 4 {
 		fmt.Println("this is simple if statement")
+	} else if i == 2 {
+		fmt.Println("this is simple else if statement")
 	} else {
 		fmt.Println("this is simple else block")
 	}
